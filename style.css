@@ -1,0 +1,107 @@
+h1 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+}
+#container {
+  display: flex;
+  min-width: 850px;
+  width: 60%;
+  height: 60%;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+button {
+  background-color: white;
+  border: 1px solid white;
+  width: 120px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.col {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  /* flex-basis: 0; */
+  justify-content: space-between;
+}
+img {
+  width: min-content;
+  align-self: start;
+  justify-content: start;
+}
+.d1 {
+  background-color: hsl(31, 77%, 52%);
+}
+#b1 {
+  color: hsl(31, 77%, 52%);
+}
+#b1:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+}
+.d2 {
+  background-color: hsl(184, 100%, 22%);
+}
+#b2 {
+  color: hsl(184, 100%, 22%);
+}
+#b2:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+.d3 {
+  background-color: hsl(179, 100%, 13%);
+}
+#b3 {
+  color: hsl(179, 100%, 13%);
+}
+#b3:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+}
+p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1rem;
+}
+@media screen and (max-width: 920px) {
+  #container {
+    flex-direction: column;
+    height: max-content;
+    max-width: 700px;
+    min-width: 300px;
+    /* width: 40%; */
+  }
+  body {
+    height: max-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  button {
+    width: 50%;
+  }
+  .col {
+    min-height: 400px;
+    height: 100%;
+  }
+}
